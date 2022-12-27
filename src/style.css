@@ -1,0 +1,86 @@
+:root{
+    --color-txt-nav: #5b00fb;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100;
+    height: 60px;
+    border: 1px solid black;
+    display: flex;
+}
+
+header .containerBrand{
+    width: 20%;
+    min-width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .containerBrand img {
+transform: scale(0.9);
+
+}
+
+header .containerItemList{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .containerItemList ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+
+}
+
+header .containerItemList ul li{    
+    margin: 10px;
+    border: 1px solid black;
+    color: var(--color-txt-nav)
+
+}
+
+header .containerCart{
+    border: 1px solid black;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .containerCart img{
+    height: 100%;
+}
+
+header .containerCart .containerLenght{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header .containerCart .containerLenght .cantCard{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-txt-nav);
+    color: white;
+    text-align: center;
+    top: 0;
+    left: 80%;
+    border-radius: 50%;
+}
