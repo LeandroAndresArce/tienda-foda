@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardItems{
+    border: 1px solid red;
+    height: 450px;
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+}
+
+/*Imagen*/
+
+.cardItems .cardImg{
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cardItems .cardImg img{
+ width: 100%;
+}
+
+/*Descripcion*/
+
+.cardDescription{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+.cardDescription .title{
+    font-size: 21px;
+
+}
+
+.cardDescription .description{
+    display: none;
+}
+
+.cardDescription .cant{
+    color: black;
+    font-size: 13px;
+}
