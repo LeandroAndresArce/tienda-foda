@@ -21,11 +21,13 @@
     height: 60%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 
 }
 
 .cardItems .cardImg img{
- width: 100%;
+    height: 100%;
+    transform: scale(0.65);
 }
 
 /*Descripcion*/
