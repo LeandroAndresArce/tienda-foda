@@ -3,13 +3,18 @@ import "../../styles/cardItem.css"
 import Description from "./description";
 import ButtonDetalles from "./ButtonDetalles";
 import ButtonAddCart from "./ButtonAddCart";
-import ImgPrueba from "../../img/ropa/coleccion-hombre.png"
 
-const CardItem = () =>  {
+const CardItem = (props) =>  {
     return(
         <div className="cardItems">
-            <Image imagen ={ImgPrueba}/>
-            <Description title="Coleccion de hombre" />
+            <Image 
+                imagen ={PaymentResponse.imagen}
+                />
+            <Description 
+                title={props.title}
+                cantidad={props.cantidad}
+                precio={20000}
+                 />
             <div className="Buttons"> 
             <ButtonDetalles />
             <ButtonAddCart />
