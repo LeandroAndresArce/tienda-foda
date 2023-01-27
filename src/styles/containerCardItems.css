@@ -1,7 +1,10 @@
 .containerCardItems{
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px;
-
+    align-items: center;
+    gap: 2rem;
+    max-width: 1280px;
+    margin: 2rem auto auto auto;
 }

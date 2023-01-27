@@ -1,13 +1,15 @@
-import './style.css';
+import ContainerCardItem from './components/components-Items/containerCardItem';
 import NavBar from './components/header/NavBar';
-import CardItem from './components/components items/CardItem';
-import containerCardItem from './components/components items/containerCardItem';
+import './style.css';
 
 function App() {
   return (
     <>
     <NavBar />
-    <containerCardItem />
+    <ContainerCardItem />
+    <div style={{width: "100%", textAlign: "center", padding: "4rem"}}>
+        <h1 style={{fontSize: "15px"}}>Hasta 3 cuotas sin interes. Compra minima de $20.000</h1>
+    </div>
     </>
     );
 }
