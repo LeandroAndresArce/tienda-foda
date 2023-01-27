@@ -4,65 +4,65 @@ import Description from "../components/components-Items/description";
 const productos = [
     {
         id: 1,
-        title: "ropa",
+        title: "Camisa para hombre",
         description: "ropa de hombre",
         stock: 51,
-        type: "Hombre",
+        type: "Hombres",
         img:"",
         price:500,
 
     },
     {
         id: 2,
-        title: "ropa",
+        title: "Pantalon para hombre",
         description: "ropa de hombre",
         stock: 51,
-        type: "Hombre",
+        type: "Hombres",
         img:"",
         price:500,
 
     },    {
         id: 3,
-        title: "ropa",
+        title: "Camisa para mujer",
         description: "ropa de hombre",
         stock: 51,
-        type: "Mujer",
+        type: "Mujeres",
         img:"",
         price:500,
 
     },
     {
         id: 4,
-        title: "ropa",
+        title: "Pantalon Mujer",
         description: "ropa de hombre",
         stock: 51,
-        type: "Mujer",
+        type: "Mujeres",
         img:"",
         price:500,
 
     },
     {
         id: 5,
-        title: "ropa",
+        title: "Perfume hombre",
         description: "ropa de hombre",
         stock: 51,
-        type: "Perfume",
+        type: "Perfumes",
         img:"",
         price:500,
 
     },    {
         id: 6,
-        title: "ropa",
+        title: "Perfume mujer",
         description: "ropa de hombre",
         stock: 51,
-        type: "Perfume",
+        type: "Perfumes",
         img:"",
         price:500,
 
     },
     {
         id: 7,
-        title: "ropa",
+        title: "Coleccion hombre",
         description: "ropa de hombre",
         stock: 51,
         type: "Colecciones",
@@ -72,7 +72,7 @@ const productos = [
     },
     {
         id: 8,
-        title: "ropa",
+        title: "Coleccion mujer",
         description: "ropa de hombre",
         stock: 51,
         type: "Colecciones",

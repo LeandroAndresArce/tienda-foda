@@ -7,12 +7,14 @@ import './style.css';
 function App() {
   return (
     <>
+        <BrowserRouter>
         <NavBar />
         <Routes>
           <Route path='/' element={<ContainerCardItem />}/>
           <Route path='/item/:idItem' element={<DetailsItem />}/>
           <Route path='/category/:idCategory' element={<ContainerCardItem />}/>
         </Routes>
+        </BrowserRouter>
     <div style={{width: "100%", textAlign: "center", padding: "4rem"}}>
         <h1 style={{fontSize: "15px"}}>Hasta 3 cuotas sin interes. Compra minima de $20.000</h1>
     </div>
