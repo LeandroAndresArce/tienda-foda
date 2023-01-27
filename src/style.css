@@ -25,7 +25,9 @@ header .containerBrand{
 }
 
 header .containerBrand img {
-transform: scale(0.9);
+    transform: scale(0.9);
+    height: 55px;
+    width: 55px;
 
 }
 
@@ -45,9 +47,9 @@ header .containerItemList ul{
 
 }
 
-header .containerItemList ul li{    
+header .containerItemList ul li{  
+    text-decoration: none;  
     margin: 10px;
-    border: 1px solid black;
     color: var(--color-txt-nav)
 
 }

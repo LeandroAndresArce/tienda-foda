@@ -7,7 +7,7 @@ const productos = [
         title: "ropa",
         description: "ropa de hombre",
         stock: 51,
-        type: "deportiva",
+        type: "Hombre",
         img:"",
         price:500,
 
@@ -17,7 +17,7 @@ const productos = [
         title: "ropa",
         description: "ropa de hombre",
         stock: 51,
-        type: "deportiva",
+        type: "Hombre",
         img:"",
         price:500,
 
@@ -26,7 +26,7 @@ const productos = [
         title: "ropa",
         description: "ropa de hombre",
         stock: 51,
-        type: "deportiva",
+        type: "Mujer",
         img:"",
         price:500,
 
@@ -36,7 +36,7 @@ const productos = [
         title: "ropa",
         description: "ropa de hombre",
         stock: 51,
-        type: "deportiva",
+        type: "Mujer",
         img:"",
         price:500,
 
@@ -46,7 +46,7 @@ const productos = [
         title: "ropa",
         description: "ropa de hombre",
         stock: 51,
-        type: "deportiva",
+        type: "Perfume",
         img:"",
         price:500,
 
@@ -55,7 +55,27 @@ const productos = [
         title: "ropa",
         description: "ropa de hombre",
         stock: 51,
-        type: "deportiva",
+        type: "Perfume",
+        img:"",
+        price:500,
+
+    },
+    {
+        id: 7,
+        title: "ropa",
+        description: "ropa de hombre",
+        stock: 51,
+        type: "Colecciones",
+        img:"",
+        price:500,
+
+    },
+    {
+        id: 8,
+        title: "ropa",
+        description: "ropa de hombre",
+        stock: 51,
+        type: "Colecciones",
         img:"",
         price:500,
 

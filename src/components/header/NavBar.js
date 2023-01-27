@@ -11,9 +11,9 @@ return(
 
         <nav className="containerItemList">
             <ItemListContainer 
-                itemUno = "Inicio"
-                itemDos = "Perfumes"
-                itemTres = "Ropa"
+                itemUno = "Hombres"
+                itemDos = "Mujeres"
+                itemTres = "Perfumes"
                 itemCuatro = "Colecciones"
             />
         </nav>
