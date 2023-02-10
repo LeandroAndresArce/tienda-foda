@@ -32,6 +32,12 @@
     align-items: center;
     background: none;
 }
+
+.cart .cerrar .close img{
+    width: 55px;
+    height: 55px;
+
+}
 /* ************************** */
 
 .cart .containerItemsCart{
@@ -92,4 +98,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cart .TerminarCompra .clear img{
+    width: 30px;
+    height: 30px;
 }

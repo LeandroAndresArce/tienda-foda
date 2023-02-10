@@ -2,10 +2,11 @@ import "../../styles/itemCart.css";
 import deleteWhite from "../../img/deleteWhite.png"
 import { useContext } from "react";
 import { listCartContext } from "../components-Items/ProviderContextCard";
+import { CartContext } from "../../contexts/cartContext";
 
 const ItemCart = ( {id, title, image, price, quantity } ) => {
 
-    const { removeFromCart } = useContext(listCartContext)
+    const { deleteProduct } = useContext(CartContext)
     
     return (
         <div className="itemCart">
@@ -24,7 +25,7 @@ const ItemCart = ( {id, title, image, price, quantity } ) => {
                 <span className="price">${price * quantity}</span>
             </div>
 
-            <button className="delete" onClick={ () => removeFromCart(id) }>
+            <button className="delete" onClick={ () => deleteProduct(id) }>
                 <img src={deleteWhite}></img>
             </button>
         </div>

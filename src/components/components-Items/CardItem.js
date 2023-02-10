@@ -9,12 +9,12 @@ const CardItem = (props) =>  {
     return(
         <div className="cardItems">
             <Image 
-                imagen ={PaymentResponse.imagen}
+                imagen ={props.imagen}
                 />
             <Description 
                 title={props.title}
-                cantidad={props.cantidad}
-                precio={20000}
+                stock={props.stock}
+                price={props.price}
                  />
             <div className="Buttons"> 
 
@@ -24,9 +24,10 @@ const CardItem = (props) =>  {
                     />
 
                 </Link>
-
             
-                <ButtonAddCart />
+                <ButtonAddCart
+                    id={props.id}
+                />
             </div>
         </div>
     )

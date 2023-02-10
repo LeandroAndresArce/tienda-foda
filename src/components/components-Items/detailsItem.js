@@ -6,6 +6,7 @@ import fetchSimultion from "../../utils/fetchSimulation";
 import productos from "../../utils/products";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import "../../styles/detailItem.css"
 
 const DetailsItem = () => {
     const [ datos, setDatos ] = useState([]);
@@ -20,7 +21,7 @@ const DetailsItem = () => {
     return(
         <div className="detailsItem">
             {
-                datos.map( items => (
+                datos?.map( items => (
                    <>
                     <div className="containerLeft">
                         <Image 
@@ -32,19 +33,17 @@ const DetailsItem = () => {
                             <Description 
                                 title= {items.title}
                                 parrafo= {items.description}
-                                cantidad = {items.stock}
-                                precio={items.price}
+                                stock = {items.stock}
+                                price={items.price}
                             />
                         <div className="buttons">
-                                <AddCantCart 
-                                    cant={5}
-                                />
-
                                 <ButtonDetalles 
                                     txt="Agregar al carrito"
                                 />
                         </div>
+                        
                     </div>
+                    
                    </>
                 ))
             }

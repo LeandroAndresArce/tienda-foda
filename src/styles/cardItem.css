@@ -23,8 +23,9 @@
 }
 
 .cardItems .cardImg img{
-    height: 100%;
+    height: 550px;
     transform: scale(0.65);
+    width: 380px;
 }
 
 /*Descripcion*/
@@ -70,11 +71,11 @@
 
 .Buttons #detalles{
     height: 55px;
-    width: 80%;
-    border-radius: 50px;
+    width: 100%;
+    border-radius: 21px;
     background-color: #5b00fb;
     color: white;
-    font-size: 21px;
+    font-size: 38px;
     border: none;
 }
 

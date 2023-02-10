@@ -55,17 +55,20 @@ header .containerItemList ul li{
 }
 
 header .containerCart{
-    border: 1px solid black;
     width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
 
 header .containerCart img{
-    background-color: #5b00fb;;
-    height: 100%;
+    background-color: #5b00fb;
+    height: 35px;
+    width: 35px;
     border-radius: 5px;
+    align-items: center;
+    position: relative;
 }
 
 header .containerCart .containerLenght{
@@ -78,13 +81,13 @@ header .containerCart .containerLenght{
 }
 
 header .containerCart .containerLenght .cantCard{
-    position: absolute;
-    width: 20px;
-    height: 20px;
     background-color: var(--color-txt-nav);
-    color: white;
+    border-radius: 50%;
+    color: #fff;
+    height: 20px;
+    left: 80%;
+    position: absolute;
     text-align: center;
     top: 0;
-    left: 80%;
-    border-radius: 50%;
+    width: 20px;
 }

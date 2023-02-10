@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import cartWhite from "../../img/cart.png";
-import { listCartContext } from "./ProviderContextCard";
+import { CartContext } from "../../contexts/cartContext";
 
-const ButtonAddCart = (id) =>{
+const ButtonAddCart = (props) =>{
 
-    let {addProduct} = useContext(listCartContext)
+    let {add} = useContext(CartContext)
 
     return(
-        <button id="AddCart" onClick={ () => addProduct(id) }>
+        <button id="AddCart" onClick={ () => add(props.id) }>
             <img src={cartWhite} alt="add"></img>
         </button>
     )

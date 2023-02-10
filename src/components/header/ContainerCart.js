@@ -4,13 +4,13 @@ import ItemCart from "./ItemCart.js";
 import clear from "../../img/clear.png";
 import { useContext } from "react";
 import {controllerShowCart} from "./ContextCart";
-import { listCartContext } from "../components-Items/ProviderContextCard";
+import { CartContext } from "../../contexts/cartContext";
 
 
 const ContainerCart = () => {
 
     const { cartShow, setCartShow} = useContext(controllerShowCart);
-    const {listCart, clearCart } = useContext(listCartContext);
+    const {listCart, deleteAll } = useContext(CartContext);
 
     const style = {
         display: cartShow
@@ -31,15 +31,15 @@ const ContainerCart = () => {
 
                 <div className="containerItemsCart">
                     {
-                        (listCart.length === 0 ) ? <span className="emptyCart">Tu carrito esta vacio, ¡llenalo!</span>
-                        : listCart.map(producto => ( 
+                        (listCart?.length === 0 ) ? <span className="emptyCart">Tu carrito esta vacio, ¡llenalo!</span>
+                        : listCart?.map(producto => ( 
                             <ItemCart 
-                                key={producto.id}
-                                id={producto.id}
-                                title={producto.title}
-                                image={producto.imageProduct.firtsImage}
-                                quantity={producto.quantity}
-                                price={producto.price}
+                                key={producto[0].id}
+                                id={producto[0].id}
+                                title={producto[0].title}
+                                image={producto[0].img}
+                                quantity={producto[0].stock}
+                                price={producto[0].precio}
                             />
                         ))
                     }   
@@ -51,7 +51,7 @@ const ContainerCart = () => {
                         Terminar compra
                     </button>
 
-                    <button className="clear" onClick={clearCart}>
+                    <button className="clear" onClick={deleteAll}>
                         <img src={clear}></img>
                     </button>
                 </div>

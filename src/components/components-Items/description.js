@@ -5,7 +5,7 @@ const Description = (props) => {
                 {props.title}
             </h3>
             <div className="description">
-                <span className="descriptionTitle">Descripcion: </span>
+                <span className="descriptionTitle">Descripcion:</span>
                 <p className="parrafo">
                     {props.parrafo}
                 </p>
@@ -13,11 +13,11 @@ const Description = (props) => {
             </div>
 
             <span className="cant">
-                cantidad: {props.cantidad}
+                cantidad: {props.stock}
             </span>
 
             <span className="precio">
-                {props.price}
+                ${props.price}
             </span>
 
         </div>
