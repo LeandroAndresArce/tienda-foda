@@ -5,9 +5,10 @@ const CartReducer = (state, action) => {
     case "ADD_PRODUCTS": {
       const cartId = action.payload;
       const producAdd = productos.filter(product => product.id === cartId) 
+      console.log("producAdd", producAdd)
       return {
         ...state,
-        listCart:[...state.listCart, producAdd],
+        listCart:[...state.listCart, producAdd[0]],
       };
     }
     case "DELETE_PRODUCTS": {
@@ -18,10 +19,11 @@ const CartReducer = (state, action) => {
     }
     case "DELETE_PRODUCT": {
       const deleteProduct= action.payload;
-      const updateList = productos.filter(product => product.id !== deleteProduct)
+      const updateList = state.listCart?.filter(product => product.id !== deleteProduct)
+      console.log("updateList",updateList)
       return{
         ...state,
-        listCart:[...state.listCart, updateList]
+        listCart: updateList
       };
       }
     default:

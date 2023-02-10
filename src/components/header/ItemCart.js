@@ -1,10 +1,9 @@
 import "../../styles/itemCart.css";
 import deleteWhite from "../../img/deleteWhite.png"
 import { useContext } from "react";
-import { listCartContext } from "../components-Items/ProviderContextCard";
 import { CartContext } from "../../contexts/cartContext";
 
-const ItemCart = ( {id, title, image, price, quantity } ) => {
+const ItemCart = ( {id, title, image, price, cantidad } ) => {
 
     const { deleteProduct } = useContext(CartContext)
     
@@ -17,12 +16,12 @@ const ItemCart = ( {id, title, image, price, quantity } ) => {
 
             <div className="description-cantidad">
                 <span className="title">{title}</span>
-                <span className="quantity">{`cantidad: ${quantity}`}</span>
+                <span className="quantity">{`cantidad: ${cantidad}`}</span>
             </div>
 
             <div className="price">
                 <span className="subtotal">Subtotal</span>
-                <span className="price">${price * quantity}</span>
+                <span className="price">${price * cantidad}</span>
             </div>
 
             <button className="delete" onClick={ () => deleteProduct(id) }>

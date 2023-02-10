@@ -34,18 +34,19 @@ const ContainerCart = () => {
                         (listCart?.length === 0 ) ? <span className="emptyCart">Tu carrito esta vacio, ¡llenalo!</span>
                         : listCart?.map(producto => ( 
                             <ItemCart 
-                                key={producto[0].id}
-                                id={producto[0].id}
-                                title={producto[0].title}
-                                image={producto[0].img}
-                                quantity={producto[0].stock}
-                                price={producto[0].precio}
+                                key={producto.id}
+                                id={producto.id}
+                                title={producto.title}
+                                image={producto.img}
+                                cantidad={producto.cantidad}
+                                quantity={producto.stock}
+                                price={producto.price}
                             />
                         ))
                     }   
                 </div>
 
-                <div className="TerminarCompra">
+                <div className="TerminarCompra" onClick={deleteAll}>
                     
                     <button className="terminar" >
                         Terminar compra
