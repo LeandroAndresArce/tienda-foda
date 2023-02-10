@@ -1,10 +1,13 @@
 import Brand from "./Brand";
 import ItemListContainer from "./ItemListContainer";
 import CartWiget from "./CartWidget";
+import ContainerCart from "./ContainerCart";
+import ContextCart from "./ContextCart";
 
 const NavBar = () =>{
 return(
-    <header>
+    <ContextCart>
+        <header>
         <div className="containerBrand">
             <Brand  />
         </div>
@@ -21,8 +24,9 @@ return(
         <div className="containerCart">
             <CartWiget />
         </div>
-    </header>
-
+        <ContainerCart />
+        </header>
+    </ContextCart>
     )
 
 }

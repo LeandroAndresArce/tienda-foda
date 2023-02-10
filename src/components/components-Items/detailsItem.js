@@ -24,11 +24,11 @@ const DetailsItem = () => {
                    <>
                     <div className="containerLeft">
                         <Image 
-                            imagen={items.imageProduct.firtsImage}
+                            imagen={items.img}
                         />
                     </div>  
 
-                    <div className="containerRigth">
+                    <div className="containerRight">
                             <Description 
                                 title= {items.title}
                                 parrafo= {items.description}

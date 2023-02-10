@@ -1,0 +1,78 @@
+.itemCart{
+    display: flex;
+    border: 1px solid #d2b8ff;
+    width: 100%;
+    height: 130px;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.itemCart .delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5b00fb;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.itemCart .delete img{
+    transform: scale(0.6);
+}
+
+
+
+/* imagen */
+
+.itemCart .img{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+
+.itemCart .img img{
+    transform: scale(0.4);
+}
+
+
+/* description */
+
+.itemCart .description-cantidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 33.33%;
+    height: 50%;
+}
+
+.itemCart .description-cantidad .title {
+    font-weight: bold;
+}
+
+
+/* price */
+.itemCart .price{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    height: 50%;
+    justify-content: center;
+}
+
+.itemCart .price .subtotal{
+    font-weight: bold;
+    width: 100%;
+}
+
+.itemCart .price .price{
+    font-weight: bold;
+    color: #5b00fb;
+    font-size: 31px;
+    width: 100%;
+}

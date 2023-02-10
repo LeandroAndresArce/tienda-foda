@@ -63,7 +63,9 @@ header .containerCart{
 }
 
 header .containerCart img{
+    background-color: #5b00fb;;
     height: 100%;
+    border-radius: 5px;
 }
 
 header .containerCart .containerLenght{
